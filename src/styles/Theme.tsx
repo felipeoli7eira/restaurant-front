@@ -14,7 +14,7 @@ export const theme: DefaultTheme = {
     black: '#0C0D0F',
     red: '#E03131',
     orange: '#E8590C',
-    yellow: '#FCC419',
+    yellow: '#ffd648',
     green: '#23DB42',
     teal: '#89DD13',
     cyan: '#3BC9DB',
@@ -53,10 +53,6 @@ export const theme: DefaultTheme = {
   },
 }
 
-interface ThemeProps {
-  children: ReactNode
-}
-
-export function Theme({ children }: ThemeProps) {
+export function Theme({ children }: { children: ReactNode }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
