@@ -17,6 +17,10 @@ export const Aside = styled.aside`
       }
 
       a {
+        &:hover {
+          background-color: #e53b31;
+        }
+
         &.active {
           &::before {
             content: '';
@@ -27,6 +31,8 @@ export const Aside = styled.aside`
             background-color: ${({theme}) => theme.colors.yellow};
             border-radius: 10px;
           }
+
+          color: ${({theme}) => theme.colors.yellow};
         }
       }
     }
