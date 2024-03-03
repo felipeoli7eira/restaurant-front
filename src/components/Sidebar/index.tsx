@@ -5,10 +5,11 @@ import { Rotate as HamburgerMenu } from 'hamburger-react'
 import BurguerIcon from './../../assets/icons/burger.png'
 import PizzaIcon from './../../assets/icons/pizza.png'
 import MilkShakeIcon from './../../assets/icons/drink.png'
-import IceCreamIcon from './../../assets/icons/ice-cream.png'
+import DessertsIcon from './../../assets/icons/ice-cream.png'
 
 // styled components
 import { Aside } from './design'
+import { NavLink } from 'react-router-dom'
 
 const Sidebar: React.FC = () => {
   const [isMenuOpen, setIsMenuOPen] = useState<boolean>(false)
@@ -25,44 +26,44 @@ const Sidebar: React.FC = () => {
       <nav className='flex-1 w-full h-full'>
         <ul className='h-full flex flex-column justify-content-center gap-4 pl-0'>
           <li>
-            <a href='#' className='relative flex align-items-center gap-5 no-underline px-3 active'>
+            <NavLink to={''} className='relative flex align-items-center gap-5 no-underline px-3'>
               <img src={BurguerIcon} alt='Icone de hamburguer' />
               <span className={
-                'text-base font-normal transition-colors transition-linear'
+                'text-base font-normal transition-colors transition-linear '
                 .concat(
-                  isMenuOpen ? ' show-menu-description': ' hide-menu-desciption'
+                  isMenuOpen ? 'show-menu-description': 'hide-menu-desciption'
                 )
               }>
                 Hambúrgueres
               </span>
-            </a>
+            </NavLink>
           </li>
 
           <li>
-            <a href='#' className='relative flex align-items-center gap-5 no-underline px-3'>
+            <NavLink to={'pizzas'} className='relative flex align-items-center gap-5 no-underline px-3'>
               <img src={PizzaIcon} alt='Icone de pizza' />
               <span className='text-base font-normal transition-colors transition-linear'>
                 Pizzas
               </span>
-            </a>
+            </NavLink>
           </li>
 
           <li>
-            <a href='#' className='relative flex align-items-center gap-5 no-underline px-3'>
+            <NavLink to={'drinks'} className='relative flex align-items-center gap-5 no-underline px-3'>
               <img src={MilkShakeIcon} alt='Icone de copo de milkshake' />
               <span className='text-base font-normal transition-colors transition-linear'>
                 Bebidas
               </span>
-            </a>
+            </NavLink>
           </li>
 
           <li>
-            <a href='#' className='relative flex align-items-center gap-5 no-underline px-3'>
-              <img src={IceCreamIcon} alt='Icone de sorvete' />
+            <NavLink to={'desserts'} className='relative flex align-items-center gap-5 no-underline px-3'>
+              <img src={DessertsIcon} alt='Icone de sorvete' />
               <span className='text-base font-normal transition-colors transition-linear'>
                 Sobremesas
               </span>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
