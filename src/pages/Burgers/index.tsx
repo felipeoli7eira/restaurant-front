@@ -13,17 +13,19 @@ const Burgers: React.FC = () => {
       id: 1,
       snack: 'burger',
       name: 'Mega',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
+      description:
+        'O artesanal tamanho família recheado com três carnes suculentas, queijo e bacon.',
+      price: 25.5,
+      image: 'https://i.imgur.com/upjIUnG.jpg',
     },
     {
       id: 2,
       snack: 'burger',
-      name: '4 Queojos',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
+      name: 'Extra bacon',
+      description:
+        'Criado para os amantes de bacon, possui em todas as suas camadas bacon bem assado e ainda queijo e carne.',
+      price: 23.5,
+      image: 'https://i.imgur.com/B4J04AJ.jpg',
     },
   ]
 
