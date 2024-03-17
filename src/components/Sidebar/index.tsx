@@ -24,7 +24,7 @@ const Sidebar: React.FC = () => {
       </div>
 
       <nav className='flex-1 w-full h-full'>
-        <ul className='h-full flex flex-column justify-content-center gap-4 pl-0'>
+        <ul className='h-full flex flex-column justify-content-center gap-3 pl-0'>
           <li>
             <NavLink to={''} className='relative flex align-items-center gap-5 no-underline px-3'>
               <img src={BurguerIcon} alt='Icone de hamburguer' />
