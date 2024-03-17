@@ -25,50 +25,6 @@ const Burgers: React.FC = () => {
       price: 34.0,
       image: 'https://i.imgur.com/cwG9E2f.jpeg'
     },
-    {
-      id: 3,
-      snack: 'burger',
-      name: '4 Queojos',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
-    },
-
-    {
-      id: 4,
-      snack: 'burger',
-      name: '4 Queojos',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
-    },
-
-    {
-      id: 5,
-      snack: 'burger',
-      name: '4 Queojos',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
-    },
-
-    {
-      id: 6,
-      snack: 'burger',
-      name: '4 Queojos',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
-    },
-
-    {
-      id: 7,
-      snack: 'burger',
-      name: '4 Queojos',
-      description: 'Delicioso hambúrguer artesanal: suculento, grelhado na perfeição e servido com queijo derretido e acompanhamentos frescos. Experimente nosso menu de hambúrgueres premium!',
-      price: 34.0,
-      image: 'https://i.imgur.com/cwG9E2f.jpeg'
-    },
   ]
 
   return (
