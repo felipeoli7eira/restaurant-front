@@ -1,4 +1,4 @@
-import AppBrand from '../../components/AppBrand'
+// import AppBrand from '../../components/AppBrand'
 import Sidebar from '../../components/Sidebar'
 import { Container } from './design'
 
@@ -10,7 +10,7 @@ export default function Main() {
       <Sidebar />
 
       <section className='app-outlet app-content flex-1 flex flex-column p-5 h-full overflow-y-auto gap-3'>
-        <AppBrand />
+        {/* <AppBrand /> */}
 
         <Outlet />
       </section>

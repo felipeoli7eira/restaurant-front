@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import pageSettings from '../../utils/pageSettings'
 import SnackStructure from '../../components/SnackStructure'
+import { getBurgers } from '../../services/http'
 
 const Burgers: React.FC = () => {
   pageSettings(
@@ -8,29 +9,17 @@ const Burgers: React.FC = () => {
     'Deliciosos hambúrgueres artesanais: suculentos, grelhados e servido com queijo derretido. Experimente nosso menu de hambúrgueres premium.'
   )
 
-  const data = [
-    {
-      id: 1,
-      snack: 'burger',
-      name: 'Mega',
-      description:
-        'O artesanal tamanho família recheado com três carnes suculentas, queijo e bacon.',
-      price: 25.5,
-      image: 'https://i.imgur.com/upjIUnG.jpg',
-    },
-    {
-      id: 2,
-      snack: 'burger',
-      name: 'Extra bacon',
-      description:
-        'Criado para os amantes de bacon, possui em todas as suas camadas bacon bem assado e ainda queijo e carne.',
-      price: 23.5,
-      image: 'https://i.imgur.com/B4J04AJ.jpg',
-    },
-  ]
+  const [burgers, setBurgers] = useState([])
+
+  useEffect(() => {
+    (async () => {
+      const request = await getBurgers()
+      setBurgers(request.data)
+    })()
+  }, [])
 
   return (
-    <SnackStructure data={data} />
+    <SnackStructure data={burgers} />
   )
 }
 
